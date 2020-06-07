@@ -22,9 +22,9 @@ class CERForm extends CustomForm {
 
         parent::__construct($callable);
 
-        $this->setTitle("§l§1Clansystem");
+        $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Schreibe den Namen deines neuen Clans");
+        $this->addInput("§3Write the name of your new Clan");
     }
 
 }
