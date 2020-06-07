@@ -22,9 +22,9 @@ class COForm extends CustomForm {
 
         parent::__construct($callable);
 
-        $this->setTitle("§l§1Clansystem");
+        $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Trage den Namen des Spielers ein der der neue Clanchef sein soll");
+        $this->addInput("§3Wear the name of the player who is supposed to be the new Clanowner");
     }
 
 }
