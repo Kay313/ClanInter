@@ -22,11 +22,12 @@ use Kay313\ClanInter\forms\CCForm;
 class Main extends PluginBase implements Listener{
 
     public function onEnable(){
-
-        $this->getServer()->getLogger()->info("ClanMenü wurde aktiviert!");
-
+        $this->getServer()->getLogger()->info("ClanInter enabled!");
     }
-
+    public function onDisable(){
+	$this->getServer()->getLogger()->info("ClanInter disabled");
+    }
+	
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
 		if($cmd->getName() == "c"){
 			$this->c($sender);
@@ -107,18 +108,18 @@ class Main extends PluginBase implements Listener{
 
  
 
-        $form->setTitle("§l§1Clansystem");
-        $form->setContent("§aWähle etwas aus");
-        $form->addButton("§4Schließen");
-        $form->addButton("§3Info \n§r§3Siehe Infos über einen Clan");
-        $form->addButton("§3Erstellen \n§r§3Erstelle einen Clan");
-        $form->addButton("§3Löschen \n§r§3Lösche deinen Clan");
-        $form->addButton("§3Einladen \n§r§3Lade jemanden in deinen Clan ein");
-        $form->addButton("§3Akzeptieren \n§r§3Nehme eine Einladung an");
-        $form->addButton("§3Verlassen \n§r§3Verlasse einen Clan");
-        $form->addButton("§3Kick \n§r§3Kicke jemanden aus deinem Clan");
-        $form->addButton("§3Chef \n§r§3Mache jemanden zum Clanchef");
-        $form->addButton("§3Chat \n§r§3Schreibe in den Clanchat");
+        $form->setTitle("§l§1ClanInter");
+        $form->setContent("§aWhat do you want to do?");
+        $form->addButton("§4Exit");
+        $form->addButton("§3Info \n§r§3See information about a Clan");
+        $form->addButton("§3Create \n§r§3Create a new Clan");
+        $form->addButton("§3Delete \n§r§3Delete your Clan");
+        $form->addButton("§3Invite \n§r§3Invite a Player");
+        $form->addButton("§3Accept \n§r§3Accept a Invite");
+        $form->addButton("§3Leave \n§r§3Leave a Clan");
+        $form->addButton("§3Kick \n§r§3Kick someone from your Clan");
+        $form->addButton("§3Owner \n§r§3Make someone the Clanowner");
+        $form->addButton("§3Chat \n§r§3Write in the Clanchat");
         $form->sendToPlayer($player);
         return $form;
 
