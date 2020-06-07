@@ -22,9 +22,9 @@ class CEForm extends CustomForm {
 
         parent::__construct($callable);
 
-        $this->setTitle("§l§1Clansystem");
+        $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Trage den Namen des Spielers ein den du in den Clan einladen willst");
+        $this->addInput("§3Take the name of the player you want to invite to the Clan");
     }
 
 }
