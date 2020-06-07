@@ -22,9 +22,9 @@ class CAForm extends CustomForm {
 
         parent::__construct($callable);
 
-        $this->setTitle("§l§1Clansystem");
+        $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Trage den Namen des Clans ein in den du eingeladen wurdest");
+        $this->addInput("§3Enter the name of the clan you were invited to");
     }
 
 }
