@@ -22,9 +22,9 @@ class CCForm extends CustomForm {
 
         parent::__construct($callable);
 
-        $this->setTitle("§l§1Clansystem");
+        $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Trage die Nachricht ein die du in den Clanchat senden willst");
+        $this->addInput("§3Enter the message you want to send to the Clanchat");
     }
 
 }
