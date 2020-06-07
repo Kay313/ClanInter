@@ -24,7 +24,7 @@ class CAForm extends CustomForm {
 
         $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Enter the name of the clan you were invited to");
+        $this->addInput("§3Enter the name of the Clan you were invited to");
     }
 
 }
