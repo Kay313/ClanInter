@@ -22,9 +22,9 @@ class CIForm extends CustomForm {
 
         parent::__construct($callable);
 
-        $this->setTitle("§l§1Clansystem");
+        $this->setTitle("§l§1ClanInter");
 
-        $this->addInput("§3Siehe Infos über einen Clan");
+        $this->addInput("§3See information about a Clan");
     }
 
 }
